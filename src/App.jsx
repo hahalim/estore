@@ -95,7 +95,7 @@ export const ProtectedRoute = ({ children }) => {
 
 const ProtectedRouteForAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem("user"));
-  if (admin.primaryEmailAddress.emailAddress === "hammadhalim555@gmail.com") {
+  if (admin.primaryEmailAddress.emailAddress === "hammadhalim19@gmail.com") {
     return children;
   } else {
     return <Navigate to={"/login"} />;
